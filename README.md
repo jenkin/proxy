@@ -4,7 +4,7 @@ This fork sets nginx to work only in http, useful if you want an external proxy 
 
 ```
 ProxyPreserveHost On
-ProxyPass /events ws://localhost:51553/events
+ProxyPass /events ws://localhost:[PORT]/events
 ProxyPass / http://localhost:[PORT]/
 ProxyPassReverse / http://localhost:[PORT]/
 ```
